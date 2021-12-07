@@ -43,7 +43,7 @@ router.post("/login", async (req, res) => {
       { expiresIn: "3d" }
     );
 
-    //removing password from response (const password is already declares, so name change to pass)
+    //removing password from response (const password is already declared, so password is changed to pass whith :pass )
     //mongo stores the object(document) inside _doc folder
     const { password: pass, ...others } = user._doc;
 

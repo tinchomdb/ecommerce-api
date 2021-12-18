@@ -9,6 +9,7 @@ const SectionSchema = new mongoose.Schema(
     linkText: { type: String },
     link: { type: String },
     order: { type: Number, default: 1000 },
+    category: { type: String },
   },
   { timestamps: true }
 );

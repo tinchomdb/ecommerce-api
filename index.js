@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
+const sectionRoute = require("./routes/section");
 const orderRoute = require("./routes/order");
 const authRoute = require("./routes/auth");
 
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
+app.use("/api/sections", sectionRoute);
 app.use("/api/orders", orderRoute);
 
 app.listen(process.env.PORT || 5000, () => {

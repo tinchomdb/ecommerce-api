@@ -7,7 +7,7 @@ const SectionSchema = new mongoose.Schema(
     description: { type: String },
     img: { type: String },
     linkText: { type: String },
-    link: { type: String },
+    url: { type: String },
     order: { type: Number, default: 1000 },
     category: { type: String },
   },

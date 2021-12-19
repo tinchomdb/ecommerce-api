@@ -10,7 +10,7 @@ const SectionSchema = new mongoose.Schema(
     url: { type: String },
     order: { type: Number, default: 1000 },
     category: { type: String },
-    external: { type: Boolean },
+    isInterno: { type: Boolean },
   },
   { timestamps: true }
 );

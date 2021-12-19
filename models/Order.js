@@ -4,19 +4,20 @@ const OrderSchema = new mongoose.Schema(
   {
     products: [
       {
-        productId: { type: String },
+        productName: { type: String },
         quantity: { type: Number, default: 1 },
       },
     ],
 
-    deliveryTime: { type: Object, required: true },
-    senderName: { type: String },
-    senderPhone: { type: String },
-    receiverName: { type: String },
-    receiverPhone: { type: String },
-    receiverAddress: { type: Object },
-
-    status: { type: String, default: "pending" },
+    time: { type: Date },
+    name: { type: String },
+    phone: { type: String },
+    nameSender: { type: String },
+    phoneSender: { type: String },
+    address: { type: String },
+    deliveryCost: { type: Number },
+    total: { type: Number },
+    status: { type: String, default: "pendiente" },
   },
 
   { timestamps: true }

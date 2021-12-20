@@ -7,6 +7,7 @@ const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
 const sectionRoute = require("./routes/section");
 const orderRoute = require("./routes/order");
+const commentRoute = require("./routes/comment");
 const authRoute = require("./routes/auth");
 
 const cors = require("cors");
@@ -27,6 +28,7 @@ app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
 app.use("/api/sections", sectionRoute);
 app.use("/api/orders", orderRoute);
+app.use("/api/comments", commentRoute);
 
 app.listen(process.env.PORT || 5000, () => {
   console.log("Backend server running");

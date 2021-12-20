@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { verifyTokenAndAdmin } = require("./verifyToken");
 
-const Comment = require("../models/Section");
+const Comment = require("../models/Comment");
 
 //CREATE
 
